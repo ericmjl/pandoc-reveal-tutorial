@@ -18,7 +18,12 @@
 <li>Markdown + Reveal.js + Pandoc = full, version-controlled, source for multiple outputs.</li>
 </ul>
 <h1 id="prerequisite-knowledge">prerequisite knowledge</h1>
-<p>I'm assuming that you: - know how to use <code>git</code>, - are comfortable working at the command line, - can grasp simple HTML, CSS, Bash and Python.</p>
+<p>I'm assuming that you:</p>
+<ul>
+<li>know how to use <code>git</code>,</li>
+<li>are comfortable working at the command line,</li>
+<li>can grasp simple HTML, CSS, Bash and Python.</li>
+</ul>
 <h1 id="what-youll-be-able-to-do-by-the-end">what you'll be able to do by the end</h1>
 <ul>
 <li>Create a markdown file and convert it to Reveal.js slides and a single-page HTML notes version.</li>
@@ -51,9 +56,28 @@
 <li>create a file called <code>slides.md</code></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">touch</span> slides.md</code></pre></div>
-<h2 id="fill-in-slides-source">fill in slides source</h2>
+<h2 id="fill-in-slides-yaml-header.">fill in slides' YAML header.</h2>
+<p>Use standard Markdown.</p>
 <div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">---
 title: My Title Goes Here
 author:
 - <span class="fl">name: My Name Here</span>
-<span class="fl">  affiliation: My Affiliation Here</span></code></pre></div>
+<span class="fl">  affiliation: My Affiliation Here</span>
+<span class="fl">---</span></code></pre></div>
+<h2 id="fill-in-content">fill in content</h2>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="fu"># slide 1 title</span>
+
+- <span class="fl">Bullet point 1</span>
+<span class="fl">- Bullet point 2</span>
+<span class="fl">- Bullet point 3</span>
+
+<span class="fl">## sub-slide title</span>
+
+<span class="fl">1. Numbered point.</span>
+<span class="fl">1. Numbered point.</span>
+
+<span class="fl"># slide 2 title</span>
+
+<span class="fl">Some text. A [url] to somewhere.</span>
+
+<span class="ot">[url]: http://myfavoritewebsite.com/</span></code></pre></div>

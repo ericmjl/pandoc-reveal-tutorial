@@ -33,6 +33,7 @@ In this tutorial, I will show you how you can use a single Markdown source file 
 # prerequisite knowledge
 
 I'm assuming that you:
+
 - know how to use `git`,
 - are comfortable working at the command line,
 - can grasp simple HTML, CSS, Bash and Python.
@@ -71,7 +72,9 @@ Let's get setup!
 $ touch slides.md
 ```
 
-## fill in slides source
+## fill in slides' YAML header.
+
+Use standard Markdown.
 
 ```markdown
 ---
@@ -79,4 +82,26 @@ title: My Title Goes Here
 author:
 - name: My Name Here
   affiliation: My Affiliation Here
+---
+```
+
+## fill in content
+
+```markdown
+# slide 1 title
+
+- Bullet point 1
+- Bullet point 2
+- Bullet point 3
+
+## sub-slide title
+
+1. Numbered point.
+1. Numbered point.
+
+# slide 2 title
+
+Some text. A [url] to somewhere.
+
+[url]: http://myfavoritewebsite.com/
 ```
