@@ -83,3 +83,14 @@ author:
 <span class="fl">Some text. A [url] to somewhere.</span>
 
 <span class="ot">[url]: http://myfavoritewebsite.com/</span></code></pre></div>
+<h1 id="create-your-build-script-ver.1">create your build script (ver.1)</h1>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">touch</span> build.sh</code></pre></div>
+<h1 id="write-your-build-script-ver.1">write your build script (ver.1)</h1>
+<p>write your pandoc commands into the build script</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co"># Make revealjs version of slides</span>
+<span class="ex">pandoc</span> slides.md -o slides.html \
+    --section-divs \
+    -t revealjs \
+    -s \
+    --template template.revealjs</code></pre></div>
+<h1 id="open-and-view-your-slides">open and view your slides!</h1>

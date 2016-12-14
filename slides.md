@@ -107,3 +107,23 @@ Some text. A [url] to somewhere.
 
 [url]: http://myfavoritewebsite.com/
 ```
+
+# create your build script (ver.1)
+```bash
+$ touch build.sh
+```
+
+# write your build script (ver.1)
+
+write your pandoc commands into the build script
+
+```bash
+# Make revealjs version of slides
+pandoc slides.md -o slides.html \
+    --section-divs \
+    -t revealjs \
+    -s \
+    --template template.revealjs
+```
+
+# open and view your slides!

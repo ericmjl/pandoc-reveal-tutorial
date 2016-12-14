@@ -140,6 +140,23 @@
                 
                 <span class="ot">[url]: http://myfavoritewebsite.com/</span></code></pre></div>
                 </section>
+                <section id="create-your-build-script-ver.1" class="slide level1">
+                <h1>create your build script (ver.1)</h1>
+                <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">touch</span> build.sh</code></pre></div>
+                </section>
+                <section id="write-your-build-script-ver.1" class="slide level1">
+                <h1>write your build script (ver.1)</h1>
+                <p>write your pandoc commands into the build script</p>
+                <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co"># Make revealjs version of slides</span>
+                <span class="ex">pandoc</span> slides.md -o slides.html \
+                    --section-divs \
+                    -t revealjs \
+                    -s \
+                    --template template.revealjs</code></pre></div>
+                </section>
+                <section id="open-and-view-your-slides" class="slide level1">
+                <h1>open and view your slides!</h1>
+                </section>
 			</div>
 		</div>
 
