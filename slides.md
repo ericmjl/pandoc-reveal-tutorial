@@ -74,7 +74,7 @@ $ touch slides.md
 
 ```
 
-# fill in slides' YAML header.
+# fill in slides' YAML header
 
 Use standard Markdown.
 
