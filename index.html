@@ -6,12 +6,12 @@
 <li><a href="https://www.github.com/ericmjl/pandoc-reveal-tutorial">source</a></li>
 <li><a href="http://ericmjl.github.io/pandoc-reveal-tutorial">notes</a></li>
 </ul>
-<h2 id="why-philosophical">why? (philosophical)</h2>
+<h1 id="why-philosophical">why? (philosophical)</h1>
 <ul>
 <li>I've grown frustrated with the opacity of Keynote and PowerPoint files</li>
 <li>I've come to like having more granular control over my presentations</li>
 </ul>
-<h2 id="why-practical">why? (practical)</h2>
+<h1 id="why-practical">why? (practical)</h1>
 <ul>
 <li>It's useful to have a single-page HTML version of your slide to make things easier for your listeners to follow along.</li>
 <li>Write once, output everywhere.</li>
@@ -32,15 +32,15 @@
 </ul>
 <h1 id="how">how?</h1>
 <p>Let's get setup!</p>
-<h2 id="install">install</h2>
+<h1 id="install">install</h1>
 <ul>
 <li>Pandoc</li>
 </ul>
-<h2 id="git-clone">git clone</h2>
+<h1 id="git-clone">git clone</h1>
 <ul>
 <li><a href="https://github.com/hakimel/reveal.js"><code>hakimel/reveal.js</code></a></li>
 </ul>
-<h2 id="prepare">prepare</h2>
+<h1 id="prepare">prepare</h1>
 <ul>
 <li>Create new repository (hereby called <code>repo</code>) to hold slides (distinct from <code>hakimel/reveal.js</code>)</li>
 <li>Copy from <code>hakimel/reveal.js</code> into <code>repo</code>:
@@ -51,12 +51,12 @@
 <li><code>plugin/</code></li>
 </ul></li>
 </ul>
-<h2 id="make-slides-source">make slides source</h2>
+<h1 id="make-slides-source">make slides source</h1>
 <ul>
 <li>create a file called <code>slides.md</code></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">touch</span> slides.md</code></pre></div>
-<h2 id="fill-in-slides-yaml-header.">fill in slides' YAML header.</h2>
+<h1 id="fill-in-slides-yaml-header.">fill in slides' YAML header.</h1>
 <p>Use standard Markdown.</p>
 <div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">---
 title: My Title Goes Here
@@ -64,14 +64,14 @@ author:
 - <span class="fl">name: My Name Here</span>
 <span class="fl">  affiliation: My Affiliation Here</span>
 <span class="fl">---</span></code></pre></div>
-<h2 id="fill-in-content">fill in content</h2>
+<h1 id="fill-in-content">fill in content</h1>
 <div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="fu"># slide 1 title</span>
 
 - <span class="fl">Bullet point 1</span>
 <span class="fl">- Bullet point 2</span>
 <span class="fl">- Bullet point 3</span>
 
-<span class="fl">## sub-slide title</span>
+<span class="fl"># sub-slide title</span>
 
 <span class="fl">1. Numbered point.</span>
 <span class="fl">1. Numbered point.</span>

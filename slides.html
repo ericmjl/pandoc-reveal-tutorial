@@ -40,21 +40,21 @@
                 <li><a href="https://www.github.com/ericmjl/pandoc-reveal-tutorial">source</a></li>
                 <li><a href="http://ericmjl.github.io/pandoc-reveal-tutorial">notes</a></li>
                 </ul>
-                <section id="why-philosophical" class="level2">
-                <h2>why? (philosophical)</h2>
+                </section>
+                <section id="why-philosophical" class="slide level1">
+                <h1>why? (philosophical)</h1>
                 <ul>
                 <li>I've grown frustrated with the opacity of Keynote and PowerPoint files</li>
                 <li>I've come to like having more granular control over my presentations</li>
                 </ul>
                 </section>
-                <section id="why-practical" class="level2">
-                <h2>why? (practical)</h2>
+                <section id="why-practical" class="slide level1">
+                <h1>why? (practical)</h1>
                 <ul>
                 <li>It's useful to have a single-page HTML version of your slide to make things easier for your listeners to follow along.</li>
                 <li>Write once, output everywhere.</li>
                 <li>Markdown + Reveal.js + Pandoc = full, version-controlled, source for multiple outputs.</li>
                 </ul>
-                </section>
                 </section>
                 <section id="prerequisite-knowledge" class="slide level1">
                 <h1>prerequisite knowledge</h1>
@@ -76,20 +76,21 @@
                 <section id="how" class="slide level1">
                 <h1>how?</h1>
                 <p>Let's get setup!</p>
-                <section id="install" class="level2">
-                <h2>install</h2>
+                </section>
+                <section id="install" class="slide level1">
+                <h1>install</h1>
                 <ul>
                 <li>Pandoc</li>
                 </ul>
                 </section>
-                <section id="git-clone" class="level2">
-                <h2>git clone</h2>
+                <section id="git-clone" class="slide level1">
+                <h1>git clone</h1>
                 <ul>
                 <li><a href="https://github.com/hakimel/reveal.js"><code>hakimel/reveal.js</code></a></li>
                 </ul>
                 </section>
-                <section id="prepare" class="level2">
-                <h2>prepare</h2>
+                <section id="prepare" class="slide level1">
+                <h1>prepare</h1>
                 <ul>
                 <li>Create new repository (hereby called <code>repo</code>) to hold slides (distinct from <code>hakimel/reveal.js</code>)</li>
                 <li>Copy from <code>hakimel/reveal.js</code> into <code>repo</code>:
@@ -101,15 +102,15 @@
                 </ul></li>
                 </ul>
                 </section>
-                <section id="make-slides-source" class="level2">
-                <h2>make slides source</h2>
+                <section id="make-slides-source" class="slide level1">
+                <h1>make slides source</h1>
                 <ul>
                 <li>create a file called <code>slides.md</code></li>
                 </ul>
                 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">touch</span> slides.md</code></pre></div>
                 </section>
-                <section id="fill-in-slides-yaml-header." class="level2">
-                <h2>fill in slides' YAML header.</h2>
+                <section id="fill-in-slides-yaml-header." class="slide level1">
+                <h1>fill in slides' YAML header.</h1>
                 <p>Use standard Markdown.</p>
                 <div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">---
                 title: My Title Goes Here
@@ -118,15 +119,15 @@
                 <span class="fl">  affiliation: My Affiliation Here</span>
                 <span class="fl">---</span></code></pre></div>
                 </section>
-                <section id="fill-in-content" class="level2">
-                <h2>fill in content</h2>
+                <section id="fill-in-content" class="slide level1">
+                <h1>fill in content</h1>
                 <div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="fu"># slide 1 title</span>
                 
                 - <span class="fl">Bullet point 1</span>
                 <span class="fl">- Bullet point 2</span>
                 <span class="fl">- Bullet point 3</span>
                 
-                <span class="fl">## sub-slide title</span>
+                <span class="fl"># sub-slide title</span>
                 
                 <span class="fl">1. Numbered point.</span>
                 <span class="fl">1. Numbered point.</span>
@@ -136,7 +137,6 @@
                 <span class="fl">Some text. A [url] to somewhere.</span>
                 
                 <span class="ot">[url]: http://myfavoritewebsite.com/</span></code></pre></div>
-                </section>
                 </section>
 			</div>
 		</div>

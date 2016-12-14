@@ -19,12 +19,12 @@ In this tutorial, I will show you how you can use a single Markdown source file 
 [source]: https://www.github.com/ericmjl/pandoc-reveal-tutorial
 [notes]: http://ericmjl.github.io/pandoc-reveal-tutorial
 
-## why? (philosophical)
+# why? (philosophical)
 
 - I've grown frustrated with the opacity of Keynote and PowerPoint files
 - I've come to like having more granular control over my presentations
 
-## why? (practical)
+# why? (practical)
 
 - It's useful to have a single-page HTML version of your slide to make things easier for your listeners to follow along.
 - Write once, output everywhere.
@@ -48,15 +48,15 @@ I'm assuming that you:
 
 Let's get setup!
 
-## install
+# install
 
 - Pandoc
 
-## git clone
+# git clone
 
 - [`hakimel/reveal.js`](https://github.com/hakimel/reveal.js)
 
-## prepare
+# prepare
 - Create new repository (hereby called `repo`) to hold slides (distinct from `hakimel/reveal.js`)
 - Copy from `hakimel/reveal.js` into `repo`:
     - `css/`
@@ -64,7 +64,7 @@ Let's get setup!
     - `lib/`
     - `plugin/`
 
-## make slides source
+# make slides source
 
 - create a file called `slides.md`
 
@@ -72,7 +72,7 @@ Let's get setup!
 $ touch slides.md
 ```
 
-## fill in slides' YAML header.
+# fill in slides' YAML header.
 
 Use standard Markdown.
 
@@ -85,7 +85,7 @@ author:
 ---
 ```
 
-## fill in content
+# fill in content
 
 ```markdown
 # slide 1 title
@@ -94,7 +94,7 @@ author:
 - Bullet point 2
 - Bullet point 3
 
-## sub-slide title
+# sub-slide title
 
 1. Numbered point.
 1. Numbered point.
