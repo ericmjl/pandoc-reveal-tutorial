@@ -68,7 +68,7 @@ Let's get setup!
 
 - create a file called `slides.md`
 
-```bash
+```
 
 $ touch slides.md
 
@@ -78,7 +78,7 @@ $ touch slides.md
 
 Use standard Markdown.
 
-```markdown
+```
 ---
 title: My Title Goes Here
 author:
