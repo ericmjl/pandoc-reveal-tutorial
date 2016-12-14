@@ -1,83 +1,162 @@
-<h1 id="introduction">introduction</h1>
-<p>In this tutorial, I will show you how you can use a single Markdown source file to create HTML notes and Reveal.js versions of your slides.</p>
-<h1 id="versions">versions</h1>
-<ul>
-<li>[slides]</li>
-<li><a href="https://www.github.com/ericmjl/pandoc-reveal-tutorial">source</a></li>
-<li><a href="http://ericmjl.github.io/pandoc-reveal-tutorial">notes</a></li>
-</ul>
-<h2 id="why-philosophical">why? (philosophical)</h2>
-<ul>
-<li>I've grown frustrated with the opacity of Keynote and PowerPoint files</li>
-<li>I've come to like having more granular control over my presentations</li>
-</ul>
-<h2 id="why-practical">why? (practical)</h2>
-<ul>
-<li>It's useful to have a single-page HTML version of your slide to make things easier for your listeners to follow along.</li>
-<li>Write once, output everywhere.</li>
-<li>Markdown + Reveal.js + Pandoc = full, version-controlled, source for multiple outputs.</li>
-</ul>
-<h1 id="prerequisite-knowledge">prerequisite knowledge</h1>
-<p>I'm assuming that you:</p>
-<ul>
-<li>know how to use <code>git</code>,</li>
-<li>are comfortable working at the command line,</li>
-<li>can grasp simple HTML, CSS, Bash and Python.</li>
-</ul>
-<h1 id="what-youll-be-able-to-do-by-the-end">what you'll be able to do by the end</h1>
-<ul>
-<li>Create a markdown file and convert it to Reveal.js slides and a single-page HTML notes version.</li>
-<li>Create a custom CSS file for styling the slides and HTML notes.</li>
-<li>Modify the template to add in elements that you decide are necessary.</li>
-</ul>
-<h1 id="how">how?</h1>
-<p>Let's get setup!</p>
-<h2 id="install">install</h2>
-<ul>
-<li>Pandoc</li>
-</ul>
-<h2 id="git-clone">git clone</h2>
-<ul>
-<li><a href="https://github.com/hakimel/reveal.js"><code>hakimel/reveal.js</code></a></li>
-</ul>
-<h2 id="prepare">prepare</h2>
-<ul>
-<li>Create new repository (hereby called <code>repo</code>) to hold slides (distinct from <code>hakimel/reveal.js</code>)</li>
-<li>Copy from <code>hakimel/reveal.js</code> into <code>repo</code>:
-<ul>
-<li><code>css/</code></li>
-<li><code>js/</code></li>
-<li><code>lib/</code></li>
-<li><code>plugin/</code></li>
-</ul></li>
-</ul>
-<h2 id="make-slides-source">make slides source</h2>
-<ul>
-<li>create a file called <code>slides.md</code></li>
-</ul>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">touch</span> slides.md</code></pre></div>
-<h2 id="fill-in-slides-yaml-header.">fill in slides' YAML header.</h2>
-<p>Use standard Markdown.</p>
-<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">---
-title: My Title Goes Here
-author:
-- <span class="fl">name: My Name Here</span>
-<span class="fl">  affiliation: My Affiliation Here</span>
-<span class="fl">---</span></code></pre></div>
-<h2 id="fill-in-content">fill in content</h2>
-<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="fu"># slide 1 title</span>
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-- <span class="fl">Bullet point 1</span>
-<span class="fl">- Bullet point 2</span>
-<span class="fl">- Bullet point 3</span>
+		<title>Making HTML slides &amp; handout notes</title>
 
-<span class="fl">## sub-slide title</span>
+		<link rel="stylesheet" href="css/reveal.css">
+        <!-- Allows user to select theme, or else default to beige. -->
+                <link rel="stylesheet" href="css/theme/beige.css">
+        
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-<span class="fl">1. Numbered point.</span>
-<span class="fl">1. Numbered point.</span>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section id="title" class="slide level1">
+                    <h1>Making HTML slides &amp; handout notes</h1>
+                                                            <h2>Eric J. Ma (MIT)</h2>
+                                                        </section>
+                <section id="introduction" class="slide level1">
+                <h1>introduction</h1>
+                <p>In this tutorial, I will show you how you can use a single Markdown source file to create HTML notes and Reveal.js versions of your slides.</p>
+                </section>
+                <section id="versions" class="slide level1">
+                <h1>versions</h1>
+                <ul>
+                <li>[slides]</li>
+                <li><a href="https://www.github.com/ericmjl/pandoc-reveal-tutorial">source</a></li>
+                <li><a href="http://ericmjl.github.io/pandoc-reveal-tutorial">notes</a></li>
+                </ul>
+                <section id="why-philosophical" class="level2">
+                <h2>why? (philosophical)</h2>
+                <ul>
+                <li>I've grown frustrated with the opacity of Keynote and PowerPoint files</li>
+                <li>I've come to like having more granular control over my presentations</li>
+                </ul>
+                </section>
+                <section id="why-practical" class="level2">
+                <h2>why? (practical)</h2>
+                <ul>
+                <li>It's useful to have a single-page HTML version of your slide to make things easier for your listeners to follow along.</li>
+                <li>Write once, output everywhere.</li>
+                <li>Markdown + Reveal.js + Pandoc = full, version-controlled, source for multiple outputs.</li>
+                </ul>
+                </section>
+                </section>
+                <section id="prerequisite-knowledge" class="slide level1">
+                <h1>prerequisite knowledge</h1>
+                <p>I'm assuming that you:</p>
+                <ul>
+                <li>know how to use <code>git</code>,</li>
+                <li>are comfortable working at the command line,</li>
+                <li>can grasp simple HTML, CSS, Bash and Python.</li>
+                </ul>
+                </section>
+                <section id="what-youll-be-able-to-do-by-the-end" class="slide level1">
+                <h1>what you'll be able to do by the end</h1>
+                <ul>
+                <li>Create a markdown file and convert it to Reveal.js slides and a single-page HTML notes version.</li>
+                <li>Create a custom CSS file for styling the slides and HTML notes.</li>
+                <li>Modify the template to add in elements that you decide are necessary.</li>
+                </ul>
+                </section>
+                <section id="how" class="slide level1">
+                <h1>how?</h1>
+                <p>Let's get setup!</p>
+                <section id="install" class="level2">
+                <h2>install</h2>
+                <ul>
+                <li>Pandoc</li>
+                </ul>
+                </section>
+                <section id="git-clone" class="level2">
+                <h2>git clone</h2>
+                <ul>
+                <li><a href="https://github.com/hakimel/reveal.js"><code>hakimel/reveal.js</code></a></li>
+                </ul>
+                </section>
+                <section id="prepare" class="level2">
+                <h2>prepare</h2>
+                <ul>
+                <li>Create new repository (hereby called <code>repo</code>) to hold slides (distinct from <code>hakimel/reveal.js</code>)</li>
+                <li>Copy from <code>hakimel/reveal.js</code> into <code>repo</code>:
+                <ul>
+                <li><code>css/</code></li>
+                <li><code>js/</code></li>
+                <li><code>lib/</code></li>
+                <li><code>plugin/</code></li>
+                </ul></li>
+                </ul>
+                </section>
+                <section id="make-slides-source" class="level2">
+                <h2>make slides source</h2>
+                <ul>
+                <li>create a file called <code>slides.md</code></li>
+                </ul>
+                <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">touch</span> slides.md</code></pre></div>
+                </section>
+                <section id="fill-in-slides-yaml-header." class="level2">
+                <h2>fill in slides' YAML header.</h2>
+                <p>Use standard Markdown.</p>
+                <div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">---
+                title: My Title Goes Here
+                author:
+                - <span class="fl">name: My Name Here</span>
+                <span class="fl">  affiliation: My Affiliation Here</span>
+                <span class="fl">---</span></code></pre></div>
+                </section>
+                <section id="fill-in-content" class="level2">
+                <h2>fill in content</h2>
+                <div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="fu"># slide 1 title</span>
+                
+                - <span class="fl">Bullet point 1</span>
+                <span class="fl">- Bullet point 2</span>
+                <span class="fl">- Bullet point 3</span>
+                
+                <span class="fl">## sub-slide title</span>
+                
+                <span class="fl">1. Numbered point.</span>
+                <span class="fl">1. Numbered point.</span>
+                
+                <span class="fl"># slide 2 title</span>
+                
+                <span class="fl">Some text. A [url] to somewhere.</span>
+                
+                <span class="ot">[url]: http://myfavoritewebsite.com/</span></code></pre></div>
+                </section>
+                </section>
+			</div>
+		</div>
 
-<span class="fl"># slide 2 title</span>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
 
-<span class="fl">Some text. A [url] to somewhere.</span>
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
 
-<span class="ot">[url]: http://myfavoritewebsite.com/</span></code></pre></div>
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
