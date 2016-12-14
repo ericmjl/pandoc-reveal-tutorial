@@ -1,5 +1,11 @@
 <h1 id="introduction">introduction</h1>
 <p>In this tutorial, I will show you how you can use a single Markdown source file to create HTML notes and Reveal.js versions of your slides.</p>
+<h1 id="versions">versions</h1>
+<ul>
+<li>[slides]</li>
+<li><a href="https://www.github.com/ericmjl/pandoc-reveal-tutorial">source</a></li>
+<li><a href="http://ericmjl.github.io/pandoc-reveal-tutorial">notes</a></li>
+</ul>
 <h2 id="why-philosophical">why? (philosophical)</h2>
 <ul>
 <li>I've grown frustrated with the opacity of Keynote and PowerPoint files</li>
@@ -12,10 +18,7 @@
 <li>Markdown + Reveal.js + Pandoc = full, version-controlled, source for multiple outputs.</li>
 </ul>
 <h1 id="prerequisite-knowledge">prerequisite knowledge</h1>
-<ul>
-<li>Git</li>
-<li>Can grasp simple HTML, CSS, Bash and Python.</li>
-</ul>
+<p>I'm assuming that you: - know how to use <code>git</code>, - are comfortable working at the command line, - can grasp simple HTML, CSS, Bash and Python.</p>
 <h1 id="what-youll-be-able-to-do-by-the-end">what you'll be able to do by the end</h1>
 <ul>
 <li>Create a markdown file and convert it to Reveal.js slides and a single-page HTML notes version.</li>
@@ -43,3 +46,14 @@
 <li><code>plugin/</code></li>
 </ul></li>
 </ul>
+<h2 id="make-slides-source">make slides source</h2>
+<ul>
+<li>create a file called <code>slides.md</code></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">touch</span> slides.md</code></pre></div>
+<h2 id="fill-in-slides-source">fill in slides source</h2>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">---
+title: My Title Goes Here
+author:
+- <span class="fl">name: My Name Here</span>
+<span class="fl">  affiliation: My Affiliation Here</span></code></pre></div>

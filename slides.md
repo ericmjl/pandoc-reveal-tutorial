@@ -10,6 +10,15 @@ date: 14 December 2016
 
 In this tutorial, I will show you how you can use a single Markdown source file to create HTML notes and Reveal.js versions of your slides.
 
+# versions
+
+- [slides]
+- [source]
+- [notes]
+
+[source]: https://www.github.com/ericmjl/pandoc-reveal-tutorial
+[notes]: http://ericmjl.github.io/pandoc-reveal-tutorial
+
 ## why? (philosophical)
 
 - I've grown frustrated with the opacity of Keynote and PowerPoint files
@@ -23,8 +32,10 @@ In this tutorial, I will show you how you can use a single Markdown source file 
 
 # prerequisite knowledge
 
-- Git
-- Can grasp simple HTML, CSS, Bash and Python.
+I'm assuming that you:
+- know how to use `git`,
+- are comfortable working at the command line,
+- can grasp simple HTML, CSS, Bash and Python.
 
 # what you'll be able to do by the end
 
@@ -51,3 +62,21 @@ Let's get setup!
     - `js/`
     - `lib/`
     - `plugin/`
+
+## make slides source
+
+- create a file called `slides.md`
+
+```bash
+$ touch slides.md
+```
+
+## fill in slides source
+
+```markdown
+---
+title: My Title Goes Here
+author:
+- name: My Name Here
+  affiliation: My Affiliation Here
+```
