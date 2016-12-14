@@ -69,7 +69,9 @@ Let's get setup!
 - create a file called `slides.md`
 
 ```bash
-touch slides.md
+
+$ touch slides.md
+
 ```
 
 # fill in slides' YAML header.
