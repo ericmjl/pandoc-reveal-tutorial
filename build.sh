@@ -1,7 +1,7 @@
 # Make HTML notes version of slides
 pandoc slides.md \
     -o index.html
-    -c css/notes.css \
+    # -c css/notes.css \
     --template=template.html \
     # -H header.html
 
