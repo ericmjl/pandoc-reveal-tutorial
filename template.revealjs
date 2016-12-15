@@ -10,6 +10,8 @@
         <!-- Allows user to select theme, or else default to beige. -->
         $if(theme)$
         <link rel="stylesheet" href="css/theme/$theme$.css">
+        $else$
+        <link rel="stylesheet" href="css/theme/simple.css">
         $endif$
 
 		<!-- Theme used for syntax highlighting of code -->
