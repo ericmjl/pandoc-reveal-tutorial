@@ -11,9 +11,7 @@ pandoc slides.md -o slides.html \
     -t revealjs \
     -s \
     --template template.revealjs \
-    -H header.html \
-
-
+    -H header.html
 
 # Automatically add and commit
 git add .
