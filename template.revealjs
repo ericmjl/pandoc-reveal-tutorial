@@ -11,7 +11,7 @@
         $if(theme)$
         <link rel="stylesheet" href="css/theme/$theme$.css">
         $else$
-        <link rel="stylesheet" href="css/theme/simple.css">
+        <link rel="stylesheet" href="css/theme/solarized.css">
         $endif$
 
 		<!-- Theme used for syntax highlighting of code -->
